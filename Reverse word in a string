@@ -1,0 +1,12 @@
+	function reverseWords(s) {
+		let sArr = s.split(" ");
+		let res = [];
+		for (let i = sArr.length - 1; i >= 0; i--){
+			if (sArr[i].trim().length == 0){ //mean spaces
+				continue;
+			}
+			res.push(sArr[i]);
+		} 
+		return res.join(" ");
+	}
+	document.write(reverseWords('I am a JS developer')); //developer JS a am I
